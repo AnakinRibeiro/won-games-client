@@ -10,6 +10,18 @@ export default {
   argTypes: {
     children: {
       type: 'string'
+    },
+    size: {
+      control: {
+        type: 'select',
+        options: ['normal', 'small']
+      }
+    },
+    color: {
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary']
+      }
     }
   }
 } as Meta
