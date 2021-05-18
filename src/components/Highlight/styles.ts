@@ -56,7 +56,7 @@ export const FloatImage = styled.img`
   ${({ theme }) => css`
     grid-area: floatimage;
     z-index: ${theme.layers.base};
-    max-height: 23rem;
+    max-height: 32rem;
     max-width: 100%;
     align-self: end;
 
