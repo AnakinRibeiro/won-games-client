@@ -33,6 +33,7 @@ export const Horizontal: Story = () => (
     <Slide>3</Slide>
     <Slide>4</Slide>
     <Slide>5</Slide>
+    <Slide>6</Slide>
   </Slider>
 )
 
@@ -51,5 +52,6 @@ export const Vertical: Story = () => (
     <Slide>3</Slide>
     <Slide>4</Slide>
     <Slide>5</Slide>
+    <Slide>6</Slide>
   </Slider>
 )

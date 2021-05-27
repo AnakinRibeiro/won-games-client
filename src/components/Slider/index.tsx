@@ -1,6 +1,6 @@
-import * as S from './styles'
 import SlickSlider, { Settings } from 'react-slick'
-import React from 'react'
+
+import * as S from './styles'
 
 export type SliderSettings = Settings
 
