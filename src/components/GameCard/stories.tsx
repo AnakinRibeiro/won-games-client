@@ -7,7 +7,7 @@ export default {
   args: {
     title: 'Population Zero',
     developer: 'Rockstar Games',
-    img: 'https://source.unsplash.com/user/willianjusten/340x140',
+    img: 'https://source.unsplash.com/user/willianjusten/300x140',
     price: 'R$ 235,00'
   },
   argTypes: {
@@ -22,7 +22,7 @@ export default {
 } as Meta
 
 export const Default: Story<GameCardProps> = (args) => (
-  <div style={{ width: '30rem' }}>
+  <div style={{ width: '30rem', objectFit: 'fill' }}>
     <GameCard {...args} />
   </div>
 )

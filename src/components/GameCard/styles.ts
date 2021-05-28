@@ -10,30 +10,28 @@ export const Wrapper = styled.article`
     background-color: ${theme.colors.white};
   `}
 `
+type ImageProps = {
+  src: string
+}
 
-export const ImageBox = styled.a`
-  min-height: 14rem;
-  position: relative;
-  width: 100%;
-  background: #f6f7f8;
-  background-image: linear-gradient(
-    to right,
-    #f6f7f8 0%,
-    #edeef1 20%,
-    #f6f7f8 40%,
-    #f6f7f8 100%
-  );
-  background-size: 80rem 14rem;
-  animation: placeholderShimmer 1s linear infinite forwards;
-  @keyframes placeholderShimmer {
-    0% {
-      background-position: -40rem 0;
-    }
-    100% {
-      background-position: 40rem 0;
-    }
-  }
+export const Image = styled.div<ImageProps>`
+  ${({ theme, src }) => css`
+    width: 100%;
+    min-height: 14rem;
+    background-color: ${theme.colors.lightGray};
+    background-image: url(${src});
+    background-position: center center;
+    background-size: cover;
+  `}
 `
+
+// export const ImageBox = styled.a`
+//   min-height: 14rem;
+//   position: relative;
+//   width: 100%;
+//   background: #f6f7f8;
+//   background-image:
+// `
 
 export const Content = styled.div`
   ${({ theme }) => css`

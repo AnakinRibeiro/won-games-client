@@ -38,9 +38,7 @@ const GameCard = ({
         {ribbon}
       </Ribbon>
     )}
-    <S.ImageBox>
-      <img src={img} alt={title} />
-    </S.ImageBox>
+    <S.Image src={img} role="img" aria-label={title} />
     <S.Content>
       <S.Info>
         <S.Title>{title}</S.Title>
