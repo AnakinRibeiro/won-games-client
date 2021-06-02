@@ -22,6 +22,7 @@ export type HomeTemplateProps = {
   freeHighligth: HighlightProps
 }
 
+// componente recebendo todas as props passadas no return da Page Index tipadas como HomeTemplateProps
 const Home = ({
   banners,
   newGames,
